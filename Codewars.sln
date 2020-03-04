@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codewars", "Codewars\Codewars.csproj", "{EAA8CB26-AD3B-495A-A695-F830EDD3AB1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Codewars", "Codewars\Codewars.csproj", "{EAA8CB26-AD3B-495A-A695-F830EDD3AB1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals", "Square(n)Sum\Fundamentals.csproj", "{20EA0A5C-B703-43E4-9835-5AEA77796CAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{EAA8CB26-AD3B-495A-A695-F830EDD3AB1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAA8CB26-AD3B-495A-A695-F830EDD3AB1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAA8CB26-AD3B-495A-A695-F830EDD3AB1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20EA0A5C-B703-43E4-9835-5AEA77796CAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20EA0A5C-B703-43E4-9835-5AEA77796CAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20EA0A5C-B703-43E4-9835-5AEA77796CAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20EA0A5C-B703-43E4-9835-5AEA77796CAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
