@@ -23,7 +23,13 @@ namespace Square_n_Sum
             // Console.WriteLine(Kata.FindSmallestInt(new int[] {1, 7, -4, 3, 4}));
 
             // FindNeedle
-            Console.WriteLine(Kata.FindNeedle(new object[] {'3', "123124234", null, "needle", "world", "hay", 2, '3', true, false}));
+            // Console.WriteLine(Kata.FindNeedle(new object[] {'3', "123124234", null, "needle", "world", "hay", 2, '3', true, false}));
+
+            // ReverseString
+            // Console.WriteLine(Kata.ReverseString("Hellothere"));
+
+            // DnaToRna
+            // Console.WriteLine(Kata.DnaToRna("DNCT"));
 
             Console.Read();
         }

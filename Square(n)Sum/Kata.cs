@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
 
 namespace Square_n_Sum
 {
@@ -72,6 +73,42 @@ namespace Square_n_Sum
                 pos++;
             }
             return "Could not find a needle in the haystack :(";
+        }
+        */
+
+        // Reversing strings
+        public static string ReverseString(string str) => new string(str.Reverse().ToArray());
+        /*
+        {
+            string reversed = "";
+
+            for(int i = str.Length-1; i >= 0; i--)
+            {
+                reversed += str[i];
+            }
+
+            return reversed;
+        }
+        */
+
+        public static string DnaToRna(string dna) => dna.Replace('T', 'U');
+        /*
+        {
+            string rna = "";
+
+            foreach(char c in dna)
+            {
+                if(c == 'T')
+                {
+                    rna += 'U';
+                }
+                else
+                {
+                    rna += c;
+                }
+            }
+
+            return rna;
         }
         */
     }
