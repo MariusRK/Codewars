@@ -19,6 +19,12 @@ namespace Square_n_Sum
             // Console.WriteLine(Kata.GetMiddle("middle"));
             // Console.WriteLine(Kata.GetMiddle("a"));
 
+            // FindSmallestInt
+            // Console.WriteLine(Kata.FindSmallestInt(new int[] {1, 7, -4, 3, 4}));
+
+            // FindNeedle
+            Console.WriteLine(Kata.FindNeedle(new object[] {'3', "123124234", null, "needle", "world", "hay", 2, '3', true, false}));
+
             Console.Read();
         }
     }

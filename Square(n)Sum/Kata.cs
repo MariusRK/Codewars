@@ -41,5 +41,38 @@ namespace Square_n_Sum
                 return s[s.Length / 2].ToString();
             }
         }
+
+        // Find the smallest integer of an array
+        public static int FindSmallestInt(int[] args)
+        {
+            int smallestInt = args[0]; 
+
+            foreach(int num in args)
+            {
+                if(smallestInt > num)
+                {
+                    smallestInt = num;
+                }
+            }
+
+            return smallestInt;
+        }
+
+        // A needle in the haystack
+        public static string FindNeedle(object[] haystack) => $"found the needle at position {Array.IndexOf(haystack, "needle")}";
+        /*
+        {
+            int pos = 0;
+            foreach(object obj in haystack)
+            {
+                if (obj == "needle")
+                {
+                    return $"found the needle at position {pos}";
+                }
+                pos++;
+            }
+            return "Could not find a needle in the haystack :(";
+        }
+        */
     }
 }
