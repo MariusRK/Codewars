@@ -31,6 +31,15 @@ namespace Square_n_Sum
             // DnaToRna
             // Console.WriteLine(Kata.DnaToRna("DNCT"));
 
+            // TwoSum
+            /*
+             *  int[] ans = Kata.TwoSum(new[] { 1234, 5678, 9012 }, 14690);
+             *  foreach(var item in ans)
+             *  {
+             *      Console.WriteLine($"Index: {item}");
+             *  }
+            */
+
             Console.Read();
         }
     }

@@ -111,5 +111,27 @@ namespace Square_n_Sum
             return rna;
         }
         */
+
+        // Find a target sum using two integers in a list
+        public static int[] TwoSum(int[] numbers, int target)
+        {
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                for (int j = 0; j < numbers.Length; j++)
+                {
+                    if (i == j)
+                    {
+                        continue;
+                    }
+
+                    if (numbers[i] + numbers[j] == target)
+                    {
+                        return new[] { i, j };
+                    }
+                }
+            }
+
+            return new int[0];
+        }
     }
 }
