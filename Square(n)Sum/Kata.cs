@@ -111,5 +111,115 @@ namespace Square_n_Sum
             return rna;
         }
         */
+
+        // Converts all words in a string to start with uppercase
+        public static string ToJadenCase(string phrase)
+        {
+            string jadenCasedPhrase = "";
+
+            for(int i = 0; i < phrase.Length; i++)
+            {
+                if (jadenCasedPhrase == "")
+                {
+                    jadenCasedPhrase += phrase[i].ToString().ToUpper();
+                    continue;
+                }
+
+                jadenCasedPhrase += phrase[i];
+                
+                if (phrase[i] == ' ')
+                {
+                    jadenCasedPhrase += phrase[i + 1].ToString().ToUpper();
+                    i++;
+                }
+            }
+
+            return jadenCasedPhrase;
+        }
+
+        // Counts the number of people on a bus
+        public static int Number(List<int[]> peopleListInOut)
+        {
+            int peopleOnTheBus = 0;
+
+            for(int i = 0; i < peopleListInOut.Count; i++)
+            {
+                peopleOnTheBus += peopleListInOut[i][0];
+                peopleOnTheBus -= peopleListInOut[i][1];
+            }
+
+            return peopleOnTheBus;
+        }
+
+        // Returns the sum of all multiples of 3 and 5
+        public static int FindSum(int n)
+        {
+            int sum = 0;
+
+            for(int i = 0; i <= n; i++)
+            {
+                if(i % 3 == 0)
+                {
+                    sum += i;
+                }
+                else if(i % 5 == 0)
+                {
+                    sum += i;
+                }
+
+                Console.WriteLine(sum);
+            }
+
+            return sum;
+        }
+
+        // Returns a number in expanded form
+        /*
+        public static string ExpandedForm(long num)
+        {
+            string strNum = num.ToString();
+
+            int numberOfZeroes = 0;
+
+            List<string> expandedNum = new List<string>();
+
+            for (int i = strNum.Length - 1; i >= 0; i--)
+            {
+                int number = str
+
+                for(int j = 0; j < numberOfZeroes; j++)
+                {
+                    if(numberOfZeroes == 0)
+                    {
+                        continue;
+                    }
+                }
+            }
+
+            for(int k = 0; k < expandedNum.Count; k++)
+            {
+                Console.WriteLine(expandedNum[k]);
+            }
+
+            return "";
+        }
+        */
+
+        // Converts a camel cased string to a string with spaces between words
+        public static string BreakCamelCase(string str)
+        {
+            string nonCamelCasedString = "";
+
+            foreach(char c in str)
+            {
+                if(c.ToString() == c.ToString().ToUpper())
+                {
+                    nonCamelCasedString += " ";
+                }
+                nonCamelCasedString += c;
+            }
+
+            return nonCamelCasedString;
+        }
     }
 }
